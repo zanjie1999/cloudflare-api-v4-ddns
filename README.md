@@ -7,6 +7,7 @@ sudo chmod +x /usr/local/bin/cf-ddns.sh
 sudo nano /usr/local/bin/cf-ddns.sh
 ```  
 修改`default config`下的几个配置变量  
+[其中APITOKEN的中文叫API令牌，注意别填了下面的API Key](https://dash.cloudflare.com/profile/api-tokens)  
 `crontab -e`  
 在最后加上`*/2 * * * * /usr/local/bin/cf-ddns.sh >/dev/null 2>&1`  
 如果需要日志就换成这条`*/2 * * * * /usr/local/bin/cf-ddns.sh >> /var/log/cf-ddns.log 2>&1`  

@@ -29,7 +29,7 @@ set -o nounset
 
 # default config
 
-# API key, see https://dash.cloudflare.com/profile/api-tokens,
+# API Token, see https://dash.cloudflare.com/profile/api-tokens,
 CFTOKEN=
 
 # Zone name, eg: example.com

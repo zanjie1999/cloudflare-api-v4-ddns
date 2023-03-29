@@ -47,7 +47,7 @@ CFTTL=120
 # Ignore local file, update ip anyway
 FORCE=false
 
-CFFILE_PATH=/$HOME/.cf
+CFFILE_PATH="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"/.cf
 
 WANIPSITE="http://v4.ipv6-test.com/api/myip.php"
 
